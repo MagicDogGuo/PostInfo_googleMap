@@ -1,0 +1,41 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.0590095, 121.5129612]
+      },
+      "properties": {
+        "id": 1,
+        "name": "臺灣新文化運動紀念館(蔣渭水)",
+        "site": "103台北市大同區寧夏路87號"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.0547529, 121.5096603]
+      },
+      "properties": {
+        "id": 2,
+        "name": "義美食品(大安醫院)",
+        "site": "103台北市大同區延平北路二段29號"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.0540266, 121.5099897]
+      },
+      "properties": {
+        "id": 3,
+        "name": "天馬茶房",
+        "site": "103台北市大同區南京西路189號"
+      }
+    }
+  ]
+}
