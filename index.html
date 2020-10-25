@@ -168,16 +168,16 @@
           // init google map
           initMap() {
 
-            // 預設顯示的地點：大稻埕公園
+            // 預設顯示的地點：新春方茶坊
             let location = {
-              lat: 25.05899, // 經度
-              lng: 121.511368 // 緯度
+              lat: 25.0580507, // 經度
+              lng: 121.5122471 // 緯度
             };
 
             // 建立地圖
             this.map = new google.maps.Map(document.getElementById('map'), {
               center: location,
-              zoom: 16.3,
+              zoom: 15.2,
               mapTypeId: 'terrain',
               mapTypeControl: false,
               streetViewControl: false
@@ -194,7 +194,7 @@
                     position: latLng,
                     map: this.map,
                     icon: 'icon50x50png.png',
-                    animation: google.maps.Animation.DROP, // DROP掉下來、BOUNCE一直彈跳
+                    animation: google.maps.Animation.BOUNCE, // DROP掉下來、BOUNCE一直彈跳
                   });
 
                   // info window
