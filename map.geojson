@@ -17,24 +17,36 @@
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [25.0547529, 121.5096603]
+        "coordinates": [25.0551602, 121.5087375]
       },
       "properties": {
         "id": 2,
-        "name": "義美食品(大安醫院)",
-        "site": "103台北市大同區延平北路二段29號"
+        "name": "李臨秋故居",
+        "site": "103台北市大同區西寧北路86巷4號"
       }
     },
     {
       "type": "Feature",
       "geometry": {
         "type": "Point",
-        "coordinates": [25.0540266, 121.5099897]
+        "coordinates": [25.0598668, 121.5126942]
       },
       "properties": {
         "id": 3,
-        "name": "天馬茶房",
-        "site": "103台北市大同區南京西路189號"
+        "name": "李春生宅舊址",
+        "site": "103台北市大同區甘州街44號"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.061383, 121.511449]
+      },
+      "properties": {
+        "id": 4,
+        "name": "太平國民小學(黃土水母校)",
+        "site": "103台北市大同區延平北路二段239號"
       }
     }
   ]
