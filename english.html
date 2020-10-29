@@ -55,13 +55,15 @@
         <div class="col">
           <button type="button" class="btn btn-outline-secondary"
                   v-for="f in features" @click="openInfoWindows(f.properties.id)">
-            {{ f.properties.name }}
+            {{ f.properties.en }}
           </button>
         </div>
       </div>
     </div>
 
-    <input type="button" value="English" onclick="location.href='english.html'" class="btn btn-outline-secondary">
+
+    <input type="button" value="中文" onclick="location.href='index.html'" class="btn btn-outline-secondary">
+
 
     <!-- 將 YOUR_API_KEY 替換成你的 API Key 即可 -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCrP2BRIyin9a0UnH-Ar0YoYyJrczLlFxU" async defer></script>
@@ -208,7 +210,7 @@
 
                   // info window
                   let infowindow = new google.maps.InfoWindow({
-                    content: `<h6><a href="https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/">${r.properties.name}</a></h6>` // 支援html
+                    content: `<h6><a href="https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/"> ${r.properties.en}</a></h6>` // 支援html
                   });
                   // 監聽 marker click 事件
                   var a = -1;
