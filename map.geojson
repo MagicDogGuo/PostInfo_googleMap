@@ -10,6 +10,7 @@
       "properties": {
         "id": 1,
         "name": "臺灣新文化運動紀念館(蔣渭水)",
+        "en":"Taiwan New Culture Movement Memorial Hall(Jiang Weishui)",
         "site": "103台北市大同區寧夏路87號",
         "image": "JAN.png"
       }
@@ -23,6 +24,7 @@
       "properties": {
         "id": 2,
         "name": "李臨秋故居",
+        "en":"Li Linqiu's House",
         "site": "103台北市大同區西寧北路86巷4號",
         "image": "LEElichO.png"
       }
@@ -36,6 +38,7 @@
       "properties": {
         "id": 3,
         "name": "李春生宅舊址",
+        "en":"Li Chunsheng's House",
         "site": "103台北市大同區甘州街44號",
         "image": "LEEsPRING.png"
       }
@@ -49,6 +52,7 @@
       "properties": {
         "id": 4,
         "name": "太平國民小學(黃土水母校)",
+        "en":"Taiping Elementary School(Huangtu Jiemao)",
         "site": "103台北市大同區延平北路二段239號",
         "image": "WOtwo.png"
       }

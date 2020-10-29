@@ -55,6 +55,7 @@
           <button type="button" class="btn btn-outline-secondary"
                   v-for="f in features" @click="openInfoWindows(f.properties.id)">
             {{ f.properties.name }}
+            <p>{{ f.properties.en }}</p>
           </button>
         </div>
       </div>
@@ -184,9 +185,15 @@
               mapTypeControl: false,
               streetViewControl: false
             });
-
+/*
+            document.addEventListener('click', function () {
+              window.location.reload();
+              window.alert();
+            });
+*/
             // 放置多個marker
-            fetch('./map.geojson')
+            var jsonName='./map.geojson';
+            fetch(jsonName)
               .then(results => results.json())
               .then(result => {
                 this.features = result.features;
@@ -201,7 +208,7 @@
 
                   // info window
                   let infowindow = new google.maps.InfoWindow({
-                    content: `<h6><a href="https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/">${r.properties.name}</a></h6>` // 支援html
+                    content: `<h6><a href="https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/">${r.properties.name}<p> ${r.properties.en}</p></a></h6>` // 支援html
                   });
                   // 監聽 marker click 事件
                   var a = -1;
