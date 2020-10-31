@@ -209,32 +209,60 @@
                   });
 
                   // info window
-                  let infowindow = new google.maps.InfoWindow({
-                    content: `<h6><a href="https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/"> ${r.properties.en}</a></h6>` // 支援html
-                  });
-                  // 監聽 marker click 事件
-                  var a = -1;
+                  if(r.properties.id < 5){
+                    let infowindow = new google.maps.InfoWindow({
+                        content: `<h6><a href="${r.properties.url}">${r.properties.name}</a></h6>` // 支援html
+                    });
 
-                  marker.addListener('click', e => {
-                    a = a*-1;
-                    if(a > 0){
-                      infowindow.open(this.map, marker);
-                    }else{
-                      infowindow.close();
-                    }
+                    //https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/
+                    // 監聽 marker click 事件
+                    var a = -1;
 
-                    //window.open("https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/");
-                  });
+                    marker.addListener('click', e => {
+                      a = a*-1;
+                      if(a > 0){
+                          infowindow.open(this.map, marker);
+                      }else{
+                          infowindow.close();
+                      }
+                      //window.open("https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/");
+                    });
 
-                  // 加一個open的method，就可由外部按鈕開啟
-                  this.infowindowAll[r.properties.id] = {
-                    open: function() {
-                      infowindow.open(this.map, marker);
-                    }
-                  };
+                    // 加一個open的method，就可由外部按鈕開啟
+                    this.infowindowAll[r.properties.id] = {
+                      open: function() {
+                          infowindow.open(this.map, marker);
 
+                      }
+                    };
+
+                  }else {
+                    let infowindow = new google.maps.InfoWindow({
+                        content: `<h6>${r.properties.name}</h6>` // 支援html
+                    });
+
+                    //https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/
+                    // 監聽 marker click 事件
+                    var a = -1;
+
+                    marker.addListener('click', e => {
+                      a = a*-1;
+                      if(a > 0){
+                          infowindow.open(this.map, marker);
+                      }else{
+                          infowindow.close();
+                      }
+                      //window.open("https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/");
+                    });
+
+                    // 加一個open的method，就可由外部按鈕開啟
+                    this.infowindowAll[r.properties.id] = {
+                      open: function() {
+                          infowindow.open(this.map, marker);
+                      }
+                    };
+                  }
                 });
-
             });
 
             //風格
