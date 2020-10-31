@@ -211,7 +211,7 @@
                   // info window
                   if(r.properties.id < 5){
                     let infowindow = new google.maps.InfoWindow({
-                        content: `<h6><a href="${r.properties.url}">${r.properties.name}</a></h6>` // 支援html
+                        content: `<h6><a href="${r.properties.url}">${r.properties.en}</a></h6>` // 支援html
                     });
 
                     //https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/
@@ -238,7 +238,7 @@
 
                   }else {
                     let infowindow = new google.maps.InfoWindow({
-                        content: `<h6>${r.properties.name}</h6>` // 支援html
+                        content: `<h6>${r.properties.en}</h6>` // 支援html
                     });
 
                     //https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/
