@@ -12,7 +12,8 @@
         "name": "臺灣新文化運動紀念館(蔣渭水)",
         "en":"Taiwan New Culture Movement Memorial Hall(Jiang Weishui)",
         "site": "103台北市大同區寧夏路87號",
-        "image": "JAN.png"
+        "image": "JAN.png",
+        "url": "https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/"
       }
     },
     {
@@ -26,7 +27,8 @@
         "name": "李臨秋故居",
         "en":"Li Linqiu's House",
         "site": "103台北市大同區西寧北路86巷4號",
-        "image": "LEElichO.png"
+        "image": "LEElichO.png",
+        "url": "https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/"
       }
     },
     {
@@ -40,7 +42,8 @@
         "name": "李春生宅舊址",
         "en":"Li Chunsheng's House",
         "site": "103台北市大同區甘州街44號",
-        "image": "LEEsPRING.png"
+        "image": "LEEsPRING.png",
+        "url": "https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/"
       }
     },
     {
@@ -54,7 +57,38 @@
         "name": "太平國民小學(黃土水母校)",
         "en":"Taiping Elementary School(Huangtu Jiemao's alma mater)",
         "site": "103台北市大同區延平北路二段239號",
-        "image": "WOtwo.png"
+        "image": "WOtwo.png",
+        "url": "https://magicdogguo.github.io/DDDWebAR_Marker/DDD_webAR_Marker/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.0543865, 121.5083538]
+      },
+      "properties": {
+        "id": 5,
+        "name": "永樂市場",
+        "en":"Yongle Fabric Market",
+        "site": "103台北市大同區迪化街一段21號",
+        "image": "shop02.png",
+        "url": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [25.0592555, 121.5089144]
+      },
+      "properties": {
+        "id": 6,
+        "name": "誠天下葯食舖",
+        "en":"Sincere World Medicine Food Shop",
+        "site": "103台北市大同區迪化街一段212號",
+        "image": "shop01.png",
+        "url": ""
       }
     }
   ]
